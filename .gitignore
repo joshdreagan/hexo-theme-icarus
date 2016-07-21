@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -110,6 +111,9 @@ _config*.yml*
 yarn.lock
 
 # Intellij Idea config file
+=======
+*.iml
+>>>>>>> c365dd6 (Added _config.yaml. Fixed issues with paths for banners and thumbnails.)
 .idea
 *.ipr
 *.iws
