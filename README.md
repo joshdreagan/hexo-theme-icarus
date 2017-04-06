@@ -132,6 +132,7 @@ Give your audiences best viewing experience with Icarus's mobile-friendly respon
 
 ![Responsive Layout](https://ppoffice.github.io/hexo-theme-icarus/gallery/responsive.png)
 
+<<<<<<< HEAD
 ## :hammer: Development
 
 This project is built with
@@ -145,6 +146,15 @@ Please refer to the [documentation](https://ppoffice.github.io/hexo-theme-icarus
 [contributing guide](https://github.com/ppoffice/hexo-theme-icarus/blob/master/CONTRIBUTING.md) for implementation details.
 
 ## :tada: Contribute
+=======
+### Fancybox
+
+Icarus uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+
+```
+![img caption](img url)
+```
+>>>>>>> 91ece6f (merged upstream changes)
 
 If you feel like to help us build a better Icarus, you can
 

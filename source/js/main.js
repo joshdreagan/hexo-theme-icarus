@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable node/no-unsupported-features/node-builtins */
 (function($, moment, ClipboardJS, config) {
     $('.article img:not(".not-gallery-item")').each(function() {
@@ -67,6 +68,41 @@
                 $(this).removeClass(classes[0]);
             }
         });
+=======
+(function($){
+    var toTop = ($('#sidebar').height() - $(window).height()) + 60;
+    // Caption
+    $('.article-entry').each(function(i){
+        $(this).find('img').each(function(){
+            if ($(this).parent().hasClass('fancybox')) {
+                return;
+            }
+            var alt = this.alt;
+            if (alt) {
+                $(this).after('<span class="caption">' + alt + '</span>');
+            }
+
+            $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+        });
+
+        $(this).find('.fancybox').each(function(){
+            $(this).attr('rel', 'article' + i);
+        });
+    });
+    if ($.fancybox){
+        $('.fancybox').fancybox();
+    }
+
+    // Profile card
+    $(document).on('click', function () {
+        $('#profile').removeClass('card');
+    }).on('click', '#profile-anchor', function (e) {
+        e.stopPropagation();
+        $('#profile').toggleClass('card');
+    }).on('click', '.profile-inner', function (e) {
+        e.stopPropagation();
+    });
+>>>>>>> 91ece6f (merged upstream changes)
 
 
         const clipboard = config.article.highlight.clipboard;
