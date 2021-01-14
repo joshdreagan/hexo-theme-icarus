@@ -55,6 +55,7 @@ class Profile extends Component {
                             </a>
                         </div>
                     </div>
+                    { counter.category.count > 0 ? 
                     <div class="level-item has-text-centered is-marginless">
                         <div>
                             <p class="heading">{counter.category.title}</p>
@@ -63,6 +64,7 @@ class Profile extends Component {
                             </a>
                         </div>
                     </div>
+                     : null }
                     <div class="level-item has-text-centered is-marginless">
                         <div>
                             <p class="heading">{counter.tag.title}</p>
